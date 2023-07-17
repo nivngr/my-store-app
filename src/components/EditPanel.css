@@ -1,0 +1,49 @@
+.edit-panel-container {
+  background-color: #1a1a1a;
+  width: 400px;
+  max-height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+label {
+  text-align: left;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.save-button {
+  display: block;
+  margin-top: 40px;
+}
+
+.name-error, .description-error, .price-error {
+  padding: 3px;
+  color: #f1356d;
+  display: none;
+}
+
+.name-input:invalid ~ .name-error {
+  display: block;
+}
+
+.description-input:invalid ~ .description-error {
+  display: block;
+}
+
+.price-input:invalid ~ .price-error {
+  display: block;
+}
+
+input:invalid ~ .save-button {
+  display: none;
+}

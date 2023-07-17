@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  height: 60px;
+  border-radius: 5px;
+}
+
+.header > h1 {
+  color: #242424;
+  top: 50%;
+}
+
+.main-body-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
